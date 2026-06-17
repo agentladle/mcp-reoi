@@ -1,0 +1,40 @@
+[project]
+name = "agentladle-mcp-reoi"
+dynamic = ["version"]
+description = "MCP server for Residual Operating Income Valuation (REOI)"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "AgentLadle" },
+]
+keywords = ["mcp", "valuation", "reoi", "financial"]
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/agentladle/mcp-reoi"
+Repository = "https://github.com/agentladle/mcp-reoi"
+"Bug Tracker" = "https://github.com/agentladle/mcp-reoi/issues"
+
+[project.scripts]
+agentladle-mcp-reoi = "mcp_reoi.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_reoi"]
+
+[tool.hatch.version]
+path = "src/mcp_reoi/__init__.py"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
