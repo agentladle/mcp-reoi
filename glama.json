@@ -1,0 +1,9 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "name": "mcp-reoi",
+  "description": "A Model Context Protocol (MCP) server for Residual Operating Income (REOI) Valuation, built with Python and FastMCP.",
+  "repository": "https://github.com/agentladle/mcp-reoi",
+  "maintainers": [
+    "agentladle"
+  ]
+}
