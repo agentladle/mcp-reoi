@@ -1,6 +1,6 @@
 # AgentLadle MCP REOI
 
-**中文** | [English](README.md)
+[中文](README_zh.md) | **English**
 
 A Model Context Protocol (MCP) server for Residual Operating Income (REOI) Valuation, built with Python and FastMCP.
 
